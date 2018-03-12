@@ -792,9 +792,9 @@ $config_directories['sync'] = '../config/sync';
  */
 
 $databases['default']['default'] = array (
-  'database' => $_ENV['DBNAME'],
-  'username' => $_ENV['DBUSER'],
-  'password' => $_ENV['DBPASS'],
+  'database' => getenv('DBNAME'),
+  'username' => getenv('DBUSER'),
+  'password' => getenv('DBPASS'),
   'prefix' => '',
   'host' => 'localhost',
   'port' => '',
