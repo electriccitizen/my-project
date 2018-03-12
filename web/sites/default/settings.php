@@ -791,8 +791,10 @@ $config_directories['sync'] = '../config/sync';
  * Cloudways database settings:
  */
 
+$dbname =  getenv('DBNAME');
+
 $databases['default']['default'] = array (
-  'database' => getenv('DBNAME'),
+  'database' => $dbname,
   'username' => getenv('DBUSER'),
   'password' => getenv('DBPASS'),
   'prefix' => '',
